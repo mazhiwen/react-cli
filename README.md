@@ -171,3 +171,6 @@ https://www.v2ex.com/t/448632
 
 
 
+react 是基本虚拟dom
+reactdom 是web dom操作
+

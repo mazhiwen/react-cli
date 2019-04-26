@@ -3,19 +3,24 @@ import printMe from './print.js';
 import {utiDate} from 'utility-mar';
 import { cube } from './math.js';
 import './style.css';
+
+import React from 'react'
+
+import ReactDOM from 'react-dom'
+
 function component() {
   console.log(utiDate);
   var element = document.createElement('div');
   var btn = document.createElement('button');
-  // lodash 是由当前 script 脚本 import 导入进来的
-  // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   
   cube(5);
   
   console.log(
     _.join(['dddddddd', 'module', 'loaded!'], ' ')
   );
-
+  // [1, 2, 3].map((n) => {
+  //   console.log(n);
+  // });  
   btn.innerHTML = 'fuckindex!';
   btn.onclick = printMe;
   element.appendChild(btn);
@@ -32,6 +37,17 @@ function component() {
 document.body.appendChild(component());
 
 
+
+
+
+ 
+// class MyComponent extends React.Component {
+//   render() {
+//     return <div>Hello World</div>;
+//   }
+// }
+ 
+// ReactDOM.render(<MyComponent />, node);
 
 
 

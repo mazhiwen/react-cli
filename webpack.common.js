@@ -58,11 +58,19 @@ module.exports = {
         test:/\.css$/,
         use: ['style-loader', 'css-loader']
       },
-      // {
-      //   test: /\.js$/,
-      //   include: path.resolve(__dirname, "src"),
-      //   loader: "babel-loader"
-      // }
+      //编译为es5
+      // cacheDirectory 可以提升babel编译
+      { 
+        test: /\.js$/, 
+        exclude: /(node_modules|bower_components)/, 
+        // loader: "babel-loader" 
+        use: {
+          loader: 'babel-loader',
+          options: {
+            // presets: ['@babel/preset-env']
+          }
+        }
+      }
     
     ]
     
