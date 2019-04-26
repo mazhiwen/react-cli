@@ -151,3 +151,23 @@ https://www.v2ex.com/t/448632
 9.loader 是否正确的配置了生命周期且只干了必须要干的活？
 10.是否使用了过多无必要的插件？
 11.是否开启了 uglifyjs-webpack-plugin 的 cache ？
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# react相关
+
+
+

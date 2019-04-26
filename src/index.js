@@ -4,32 +4,32 @@ import {utiDate} from 'utility-mar';
 import { cube } from './math.js';
 import './style.css';
 function component() {
-    console.log(utiDate.toDateTime);
-    var element = document.createElement('div');
-    var btn = document.createElement('button');
-    // lodash 是由当前 script 脚本 import 导入进来的
-    // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    
-    cube(5);
-    
-    console.log(
-      _.join(['dddddddd', 'module', 'loaded!'], ' ')
-    );
-
-    btn.innerHTML = 'fuckindex!';
-    btn.onclick = printMe;
-    element.appendChild(btn);
-    return element;
-    
-    
-    
-
-
-
-    
-  }
+  console.log(utiDate);
+  var element = document.createElement('div');
+  var btn = document.createElement('button');
+  // lodash 是由当前 script 脚本 import 导入进来的
+  // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   
-  document.body.appendChild(component());
+  cube(5);
+  
+  console.log(
+    _.join(['dddddddd', 'module', 'loaded!'], ' ')
+  );
+
+  btn.innerHTML = 'fuckindex!';
+  btn.onclick = printMe;
+  element.appendChild(btn);
+  return element;
+  
+  
+  
+
+
+
+  
+}
+
+document.body.appendChild(component());
 
 
 
