@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
+  
   entry: {
     app: './src/index.js'
   },
@@ -49,7 +50,7 @@ module.exports = {
     })
   ],
   output: {
-    
+    // filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
   module:{
@@ -67,7 +68,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            // presets: ['@babel/preset-env']
+            presets: ['@babel/preset-env']
           }
         }
       }

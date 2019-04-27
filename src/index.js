@@ -18,9 +18,9 @@ function component() {
   console.log(
     _.join(['dddddddd', 'module', 'loaded!'], ' ')
   );
-  // [1, 2, 3].map((n) => {
-  //   console.log(n);
-  // });  
+  [1, 2, 3].map((n) => {
+    console.log(n);
+  });  
   btn.innerHTML = 'fuckindex!';
   btn.onclick = printMe;
   element.appendChild(btn);

@@ -3,7 +3,7 @@ const common = require('./webpack.common.js');
 const webpack = require('webpack');
 
 module.exports = merge(common, {
-
+  mode: 'development',
   devtool: 'inline-source-map',
   // devtool: 'eval',
   //使用 webpack-dev-server
