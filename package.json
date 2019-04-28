@@ -1,7 +1,7 @@
 {
   "name": "webpack-demo",
   "version": "1.0.0",
-  "description": "学习webpack,基于webpack官网教程",
+  "description": "学习webpack,基于webpack官网教程,node:11.2.0,npm:6.4.1",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --watch",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mazhiwen/study-notes/tree/master/webpack"
+    "url": "https://github.com/mazhiwen/study-notes/tree/master/react-cli"
   },
   "keywords": [
     "webpack",
