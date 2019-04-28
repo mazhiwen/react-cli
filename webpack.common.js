@@ -67,8 +67,9 @@ module.exports = {
         // loader: "babel-loader" 
         use: {
           loader: 'babel-loader',
+          //在.babelrc文件中配置,也可以
           options: {
-            presets: ['@babel/preset-env']
+            // presets: ['@babel/preset-env']
           }
         }
       }
