@@ -3,11 +3,13 @@ import printMe from './print.js';
 import {utiDate} from 'utility-mar';
 import { cube } from './math.js';
 import './style.css';
-
+import jspdf from 'jspdf';
 import React from 'react'
 
 import ReactDOM from 'react-dom'
 
+
+console.log(new jspdf());
 function component() {
   console.log(utiDate);
   var element = document.createElement('div');
